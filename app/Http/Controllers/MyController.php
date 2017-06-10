@@ -58,11 +58,21 @@ class MyController extends Controller
     	return view('data', compact('buah','hewan','computer'));
     }
 
-    public function buah($id)
+
+
+    public function latihan($data,$data2)
     {
-    	$id =['mangga','jeruk','apel','anggur','manggis'];
+    	$campuran =['buah'=> ['mangga','jeruk','apel','anggur','manggis'],
+                    'computer'=> ['monitor','mouse','keyboard','pc'],
+                    'hewan'=> ['kucing ','hamster','keinci'],
+                    'kucing'=>['anggora','persia','garong']];
+
+
+
+
+        $ujang =$campuran[$data];
     
-    	return view('buahan', compact('id'));
+    	return view('buahan', compact('ujang','data'));
     }
 
 

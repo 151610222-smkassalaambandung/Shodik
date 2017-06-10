@@ -40,6 +40,6 @@ Route::get('/test5','MyController@percobaan5');
 Route::get('/test6','MyController@percobaan6');
 Route::get('/test7','MyController@percobaan7');
 
-Route::get('/test8/{data}','MyController@buah');
+Route::get('/{data?}/{data2}','MyController@latihan');
    
 
